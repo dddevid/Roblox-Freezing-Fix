@@ -23,4 +23,4 @@ Your contributions help sustain the development of this and other projects.
 
 ---
 
-License: Include your project's license here (if applicable).
+Thank you already if you donate
