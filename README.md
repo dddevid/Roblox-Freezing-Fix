@@ -2,6 +2,11 @@
 
 This tool resolves a common issue causing Roblox to freeze on certain Windows systems by adjusting client settings.
 
+## Virustotal Check
+
+- `RobloxFreezeFix.exe` virustotal scan: https://www.virustotal.com/gui/file/f903ef6fc912c4d63b4e11890bad0b8181bdd6990120ebfcce4417ea5c1bf7bd?nocache=1 (Bkav Pro it's a false positive)
+- `app.exe` virustotal scan: https://www.virustotal.com/gui/file/bf184db3079bde8f28b8f9dcc51d9abadf1a9076c1b19734e7ab7470304f41f8?nocache=1 (Bkav Pro it's a false positive)
+
 ## Usage
 
 1. **Download the Executable**:
