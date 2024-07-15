@@ -5,12 +5,28 @@ This tool resolves a common issue causing Roblox to freeze on certain Windows sy
 ## Usage
 
 1. **Download the Executable**:
-   - Download `RobloxFreezeFix.exe` from the [releases](https://github.com/your-username/your-repository/releases) section of this repository.
+   - Download `RobloxFreezeFix.exe` from the [releases]([https://github.com/your-username/your-repository/releases](https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0)) section of this repository.
 
 2. **Run the Executable**:
    - Double-click `RobloxFreezeFix.exe` to execute it.
 
 3. **Outcome**:
+   - The tool will create or modify the `ClientAppSettings.json` file in the Roblox client configuration directory, resolving freezing issues during gameplay.
+
+--
+
+## What to do if it dosen't work
+
+1. **Download the zip**
+  - Download `build.zip` from the [realeses]([https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0]) section of the repository.
+
+2. **Unzip the `build.zip`**
+   - Use winrar or windows extract function to unzip `build.zip`
+  
+3. **Run The Executable**
+   - Double-click `app.exe` to execute it.
+  
+4. **Outcome**:
    - The tool will create or modify the `ClientAppSettings.json` file in the Roblox client configuration directory, resolving freezing issues during gameplay.
 
 ### Additional Requirements
