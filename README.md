@@ -18,7 +18,7 @@ This tool resolves a common issue causing Roblox to freeze on certain Windows sy
 3. **Outcome**:
    - The tool will create or modify the `ClientAppSettings.json` file in the Roblox client configuration directory, resolving freezing issues during gameplay.
 
---
+---
 
 ## What to do if it dosen't work
 
