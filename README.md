@@ -13,6 +13,10 @@ This tool resolves a common issue causing Roblox to freeze on certain Windows sy
 3. **Outcome**:
    - The tool will create or modify the `ClientAppSettings.json` file in the Roblox client configuration directory, resolving freezing issues during gameplay.
 
+### Additional Requirements
+
+- **Install VC++ Redistributable**: Before running `RobloxFreezeFix.exe`, ensure you have the VC++ Redistributable installed. You can download it from [here](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
 ## Support
 
 If you find this tool helpful and would like to support further development, consider buying me a coffee:
@@ -23,4 +27,4 @@ Your contributions help sustain the development of this and other projects.
 
 ---
 
-Thank you already if you donate
+License: Include your project's license here (if applicable).
