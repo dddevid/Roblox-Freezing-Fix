@@ -27,4 +27,4 @@ Your contributions help sustain the development of this and other projects.
 
 ---
 
-License: Include your project's license here (if applicable).
+If the game keeps freezing please [open an issue](https://github.com/dddevid/Roblox-Freezing-Fix/issues)
