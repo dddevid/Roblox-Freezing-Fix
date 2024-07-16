@@ -7,83 +7,75 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
 }
 
-.container {
+.dark-theme .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+.dark-theme header {
+    background-color: #222;
     padding: 10px 0;
 }
 
-header .neon-text {
+.dark-theme header .neon-text {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00, 0 0 150px #00ff00;
 }
 
-header nav ul {
+.dark-theme header nav ul {
     list-style-type: none;
     text-align: center;
 }
 
-header nav ul li {
+.dark-theme header nav ul li {
     display: inline;
     margin: 0 10px;
 }
 
-header nav ul li a {
+.dark-theme header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-header nav ul li a:hover {
+.dark-theme header nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
+.dark-theme main {
     padding: 40px 0;
 }
 
-.section {
-    background-color: #fff;
+.dark-theme .section {
+    background-color: #333;
     padding: 40px 0;
     text-align: center;
+    border-top: 1px solid #444;
 }
 
-.section h2 {
+.dark-theme .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.button {
+.dark-theme .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #555;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+.dark-theme .button:hover {
+    background-color: #777;
 }
