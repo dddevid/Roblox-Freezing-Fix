@@ -10,7 +10,7 @@ This tool resolves a common issue causing Roblox to freeze on certain Windows sy
 ## Usage
 
 1. **Download the Executable**:
-   - Download `RobloxFreezeFix.exe` from the [releases]([https://github.com/your-username/your-repository/releases](https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0)) section of this repository.
+   - Download `RobloxFreezeFix.exe` from the [releases]([https://github.com/dddevid/Roblox-Freezing-Fix/releases](https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0)) section of this repository.
 
 2. **Run the Executable**:
    - Double-click `RobloxFreezeFix.exe` to execute it.
