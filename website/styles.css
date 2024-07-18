@@ -1,81 +1,56 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.dark-theme .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.dark-theme header {
-    background-color: #222;
-    padding: 10px 0;
-}
-
-.dark-theme header .neon-text {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00, 0 0 150px #00ff00;
-}
-
-.dark-theme header nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-.dark-theme header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.dark-theme header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.dark-theme header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.dark-theme main {
-    padding: 40px 0;
-}
-
-.dark-theme .section {
+header {
     background-color: #333;
-    padding: 40px 0;
-    text-align: center;
-    border-top: 1px solid #444;
-}
-
-.dark-theme .section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.dark-theme .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #555;
     color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+button, a.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
-.dark-theme .button:hover {
-    background-color: #777;
+a.button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
