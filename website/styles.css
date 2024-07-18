@@ -1,4 +1,3 @@
-/* Imposta il cursore personalizzato per tutto il sito */
 body {
     cursor: url('images/pointer.png'), auto;
 }
