@@ -1,5 +1,11 @@
 /* styles.css */
 
+/* Imposta il cursore personalizzato per tutto il sito */
+body {
+    cursor: url('images/pointer.png'), auto;
+}
+
+/* Altri stili del sito */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
