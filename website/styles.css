@@ -2,31 +2,31 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0f0f0f;
-    color: #e0e0e0;
+    background-color: #121212; /* Sfondo scuro */
+    color: #e0e0e0; /* Testo chiaro */
 }
 
 header {
-    background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 204, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(70, 130, 180, 1) 0%, rgba(138, 43, 226, 1) 100%); /* Gradiente blu e viola scuro */
     color: #fff;
     padding: 2em 0;
     text-align: center;
-    box-shadow: 0 0 10px rgba(255, 0, 150, 0.5);
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
 }
 
 header h1 {
     margin: 0;
     font-size: 3em;
-    text-shadow: 0 0 10px rgba(255, 0, 150, 0.8);
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
 }
 
 main {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2); /* Sfondo semi-trasparente scuro */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.3);
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.3);
 }
 
 section {
@@ -34,35 +34,35 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid rgba(255, 0, 150, 0.8);
+    border-bottom: 2px solid rgba(138, 43, 226, 0.8); /* Sottolineatura viola */
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     font-size: 2em;
     color: #fff;
-    text-shadow: 0 0 5px rgba(255, 0, 150, 0.7);
+    text-shadow: 0 0 5px rgba(138, 43, 226, 0.7);
 }
 
 button, a.button {
     display: inline-block;
-    background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 204, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(70, 130, 180, 1) 0%, rgba(138, 43, 226, 1) 100%); /* Gradiente blu e viola scuro */
     color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 a.button:hover {
-    background: linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(255, 0, 150, 1) 100%);
-    box-shadow: 0 0 15px rgba(255, 0, 150, 0.9);
+    background: linear-gradient(90deg, rgba(138, 43, 226, 1) 0%, rgba(70, 130, 180, 1) 100%); /* Invertito per hover */
+    box-shadow: 0 0 15px rgba(70, 130, 180, 0.9);
 }
 
 .github-link {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3); /* Sfondo più scuro per il link */
     padding: 0.5em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -72,11 +72,11 @@ a.button:hover {
 }
 
 .github-link img {
-    width: 24px; /* Ridotto rispetto ai 32px precedenti */
-    height: 24px; /* Ridotto rispetto ai 32px precedenti */
+    width: 24px; /* Dimensioni dell'icona GitHub */
+    height: 24px;
     margin-right: 10px;
 }
 
 .github-link:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4); /* Hover più scuro */
 }
