@@ -1,0 +1,179 @@
+ body {
+            cursor: url('images/pointer.png'), auto;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+        }
+
+        ::selection {
+            background: #ffcc00;
+            color: #000000;
+        }
+
+        ::-moz-selection {
+            background: #ffcc00;
+            color: #000000;
+        }
+
+        ::-webkit-selection {
+            background: #ffcc00;
+            color: #000000;
+        }
+
+        header {
+            background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 75, 150, 1) 100%);
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 0 0 10px rgba(0, 75, 150, 0.8);
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        #language-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: relative;
+        }
+
+        #language-button img {
+            width: 24px;
+            height: auto;
+        }
+
+        .language-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .language-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .language-menu li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .language-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .language-menu a {
+            display: flex;
+            align-items: center;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .language-menu a img {
+            width: 20px;
+            height: auto;
+            margin-right: 8px;
+        }
+
+        .language-menu a:hover {
+            background: #f0f0f0;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            border-bottom: 2px solid rgba(0, 75, 150, 0.8);
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(0, 75, 150, 0.7);
+        }
+
+        button, a.button {
+            display: inline-block;
+            background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 75, 150, 1) 100%);
+            color: #fff;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 75, 150, 0.8);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a.button:hover {
+            background: linear-gradient(90deg, rgba(0, 75, 150, 1) 0%, rgba(0, 123, 255, 1) 100%);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+        }
+
+        .github-link {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.5em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s ease;
+            text-decoration: none;
+            color: #e0e0e0;
+        }
+
+        .github-link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .github-link:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .support-buttons img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .support-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
