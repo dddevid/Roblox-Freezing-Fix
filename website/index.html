@@ -19,6 +19,25 @@
     <header>
         <h1>Roblox Freeze Fix</h1>
         <p>This tool resolves a common issue causing Roblox to freeze on certain Windows systems by adjusting client settings.</p>
+        <div class="language-selector">
+            <button id="language-button">
+                <img src="images/flag-icon.png" alt="Select Language">
+            </button>
+            <div id="language-menu" class="language-menu">
+                <ul>
+                    <li><a href="?lang=al"><img src="https://www.countryflags.io/al/flat/24.png" alt="Albanian"> Albanian</a></li>
+                    <li><a href="?lang=it"><img src="https://www.countryflags.io/it/flat/24.png" alt="Italian"> Italian</a></li>
+                    <li><a href="?lang=en"><img src="https://www.countryflags.io/us/flat/24.png" alt="English"> English</a></li>
+                    <li><a href="?lang=de"><img src="https://www.countryflags.io/de/flat/24.png" alt="German"> German</a></li>
+                    <li><a href="?lang=es"><img src="https://www.countryflags.io/es/flat/24.png" alt="Spanish"> Spanish</a></li>
+                    <li><a href="?lang=ar"><img src="https://www.countryflags.io/ae/flat/24.png" alt="Arabic"> Arabic</a></li>
+                    <li><a href="?lang=zh"><img src="https://www.countryflags.io/cn/flat/24.png" alt="Chinese"> Chinese</a></li>
+                    <li><a href="?lang=ru"><img src="https://www.countryflags.io/ru/flat/24.png" alt="Russian"> Russian</a></li>
+                    <li><a href="?lang=fr"><img src="https://www.countryflags.io/fr/flat/24.png" alt="French"> French</a></li>
+                    <li><a href="?lang=pl"><img src="https://www.countryflags.io/pl/flat/24.png" alt="Polish"> Polish</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -68,5 +87,22 @@
     <script src="script.js"></script>
 
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devidd" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    <script>
+
+        document.getElementById('language-button').addEventListener('click', function() {
+            var menu = document.getElementById('language-menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+
+        document.addEventListener('click', function(event) {
+            var menu = document.getElementById('language-menu');
+            var button = document.getElementById('language-button');
+            if (!button.contains(event.target) && !menu.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
