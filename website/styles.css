@@ -72,8 +72,8 @@ a.button:hover {
 }
 
 .github-link img {
-    width: 32px;
-    height: 32px;
+    width: 24px; /* Ridotto rispetto ai 32px precedenti */
+    height: 24px; /* Ridotto rispetto ai 32px precedenti */
     margin-right: 10px;
 }
 
