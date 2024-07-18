@@ -3,3 +3,5 @@ Disallow: /
 
 User-agent: *
 Allow: /Roblox-Freezing-Fix/website/
+
+Sitemap: https://dddevid.github.io/Roblox-Freezing-Fix/website/sitemap.xml
