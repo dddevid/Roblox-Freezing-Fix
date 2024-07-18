@@ -80,3 +80,15 @@ a.button:hover {
 .github-link:hover {
     background: rgba(0, 0, 0, 0.4); /* Hover più scuro */
 }
+
+/* Ridurre le dimensioni dei pulsanti */
+.support-buttons img {
+    width: 150px; /* Dimensioni ridotte per i pulsanti */
+    height: auto;
+    margin-right: 10px; /* Spazio tra i pulsanti */
+}
+
+.support-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+}
