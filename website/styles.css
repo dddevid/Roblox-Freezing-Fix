@@ -1,9 +1,28 @@
+/* styles.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0f0f0f; /* Sfondo scuro */
     color: #e0e0e0; /* Testo chiaro */
+}
+
+/* Colore dell'highlight (selezione del testo) */
+::selection {
+    background: #ffcc00; /* Colore di sfondo dell'evidenziazione (giallo chiaro) */
+    color: #000000; /* Colore del testo selezionato (nero) */
+}
+
+/* Per i browser che non supportano ::selection, aggiungi regole di fallback */
+::-moz-selection {
+    background: #ffcc00; /* Colore di sfondo dell'evidenziazione in Firefox */
+    color: #000000; /* Colore del testo selezionato in Firefox */
+}
+
+::-webkit-selection {
+    background: #ffcc00; /* Colore di sfondo dell'evidenziazione in WebKit-based browsers (Chrome, Safari) */
+    color: #000000; /* Colore del testo selezionato in WebKit-based browsers */
 }
 
 header {
