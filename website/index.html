@@ -3,278 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download Roblox Freeze Fix to resolve freezing issues on Roblox. Adjusts client settings for smoother gameplay.">
-    <meta name="keywords" content="Roblox, Roblox Freeze Fix, Roblox troubleshooting, gaming tools, download Roblox fix">
+    <meta name="description" content="Redirecting to the appropriate language page based on your location.">
     <meta name="author" content="Your Name">
-    <title>Roblox Freeze Fix - Resolve Roblox Freezing Issues</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://yourwebsite.com/">
-    <meta property="og:title" content="Roblox Freeze Fix">
-    <meta property="og:description" content="Download Roblox Freeze Fix to resolve freezing issues on Roblox. Adjusts client settings for smoother gameplay.">
-    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/">
-    <style>
-        body {
-            cursor: url('images/pointer.png'), auto;
+    <title>Redirecting...</title>
+    <script>
+        // Funzione per ottenere la lingua appropriata in base alla posizione
+        function redirectToLanguagePage(ipData) {
+            const country = ipData.country_code;
+
+            // Mappa dei paesi alle lingue
+            const languageMap = {
+                'IT': 'index_it.html',  // Italia
+                'AL': 'index_al.html',  // Albania
+                'DE': 'index_de.html',  // Germania
+                'ES': 'index_es.html',  // Spagna
+                'SA': 'index_ar.html',  // Arabia Saudita (Arabo)
+                'CN': 'index_zh.html',  // Cina
+                'RU': 'index_ru.html',  // Russia
+                'FR': 'index_fr.html',  // Francia
+                'PL': 'index_pl.html'   // Polonia
+            };
+
+            // Rileva la lingua in base al codice del paese
+            const languagePage = languageMap[country] || 'index_en.html'; // Imposta a inglese se il paese non è trovato
+
+            // Reindirizza alla pagina nella lingua appropriata
+            window.location.href = languagePage;
         }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0f0f0f;
-            color: #e0e0e0;
+        // Funzione per chiamare l'API di geolocalizzazione IP
+        function fetchIPData() {
+            const apiURL = 'http://api.ipapi.com/api/check?access_key=free';
+
+            fetch(apiURL)
+                .then(response => response.json())
+                .then(data => redirectToLanguagePage(data))
+                .catch(error => {
+                    console.error('Errore durante il recupero dei dati IP:', error);
+                    // In caso di errore, reindirizza alla pagina predefinita in inglese
+                    window.location.href = 'index_en.html';
+                });
         }
 
-        ::selection {
-            background: #ffcc00;
-            color: #000000;
-        }
-
-        ::-moz-selection {
-            background: #ffcc00;
-            color: #000000;
-        }
-
-        ::-webkit-selection {
-            background: #ffcc00;
-            color: #000000;
-        }
-
-        header {
-            background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 75, 150, 1) 100%);
-            color: #fff;
-            padding: 2em 0;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-            position: relative;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            text-shadow: 0 0 10px rgba(0, 75, 150, 0.8);
-        }
-
-        .language-selector {
-            position: absolute;
-            top: 1em;
-            right: 1em;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-        }
-
-        #language-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            position: relative;
-        }
-
-        #language-button img {
-            width: 24px;
-            height: auto;
-        }
-
-        .language-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .language-menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .language-menu li {
-            border-bottom: 1px solid #ddd;
-        }
-
-        .language-menu li:last-child {
-            border-bottom: none;
-        }
-
-        .language-menu a {
-            display: flex;
-            align-items: center;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .language-menu a img {
-            width: 20px;
-            height: auto;
-            margin-right: 8px;
-        }
-
-        .language-menu a:hover {
-            background: #f0f0f0;
-        }
-
-        main {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-        }
-
-        section {
-            margin-bottom: 2em;
-        }
-
-        h2 {
-            border-bottom: 2px solid rgba(0, 75, 150, 0.8);
-            padding-bottom: 0.5em;
-            margin-bottom: 1em;
-            font-size: 2em;
-            color: #fff;
-            text-shadow: 0 0 5px rgba(0, 75, 150, 0.7);
-        }
-
-        button, a.button {
-            display: inline-block;
-            background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 75, 150, 1) 100%);
-            color: #fff;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(0, 75, 150, 0.8);
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        a.button:hover {
-            background: linear-gradient(90deg, rgba(0, 75, 150, 1) 0%, rgba(0, 123, 255, 1) 100%);
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
-        }
-
-        .github-link {
-            display: flex;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 0.5em;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transition: background 0.3s ease;
-            text-decoration: none;
-            color: #e0e0e0;
-        }
-
-        .github-link img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-
-        .github-link:hover {
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .support-buttons img {
-            width: 150px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-        .support-buttons a {
-            display: inline-block;
-            margin-right: 10px;
-        }
-    </style>
+        // Esegui la funzione quando la pagina è caricata
+        window.onload = fetchIPData;
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Roblox Freeze Fix</h1>
-        <p>This tool resolves a common issue causing Roblox to freeze on certain Windows systems by adjusting client settings.</p>
-        <div class="language-selector">
-            <span>🌍 Language Selector</span>
-            <button id="language-button">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="Language Selector" id="language-icon">
-            </button>
-            <div class="language-menu" id="language-menu">
-                <ul>
-                    <li><a href="?lang=al"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/1024px-Flag_of_Albania.svg.png" alt="Albanese"> Albanese</a></li>
-                    <li><a href="?lang=it"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png" alt="Italiano"> Italiano</a></li>
-                    <li><a href="?lang=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="Inglese"> Inglese</a></li>
-                    <li><a href="?lang=de"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1024px-Flag_of_Germany.svg.png" alt="Tedesco"> Tedesco</a></li>
-                    <li><a href="?lang=es"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1024px-Flag_of_Spain.svg.png" alt="Spagnolo"> Spagnolo</a></li>
-                    <li><a href="?lang=ar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Saudi_Arabia.svg/1024px-Flag_of_Saudi_Arabia.svg.png" alt="Arabo"> Arabo</a></li>
-                    <li><a href="?lang=zh"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flag_of_China.svg/1024px-Flag_of_China.svg.png" alt="Cinese"> Cinese</a></li>
-                    <li><a href="?lang=ru"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1024px-Flag_of_Russia.svg.png" alt="Russo"> Russo</a></li>
-                    <li><a href="?lang=fr"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1024px-Flag_of_France.svg.png" alt="Francese"> Francese</a></li>
-                    <li><a href="?lang=pl"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1024px-Flag_of_Poland.svg.png" alt="Polacco"> Polacco</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Download</h2>
-            <p>You can download the latest version of the fix using the link below:</p>
-            <a href="https://github.com/dddevid/Roblox-Freezing-Fix/releases/download/v1.0.0-Final/RobloxFreezeFix.exe" class="button" download>Download Roblox Freeze Fix</a>
-        </section>
-
-        <section>
-            <h2>Usage Instructions</h2>
-            <ol>
-                <li><strong>Download the Executable:</strong> Download <code>RobloxFreezeFix.exe</code> from the <a href="https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0-Final" target="_blank">releases section</a> of this repository.</li>
-                <li><strong>Run the Executable:</strong> Double-click <code>RobloxFreezeFix.exe</code> to execute it.</li>
-                <li><strong>Outcome:</strong> The tool will create or modify the <code>ClientAppSettings.json</code> file in the Roblox client configuration directory, resolving freezing issues during gameplay.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Support</h2>
-            <p>If you find this tool helpful and would like to support further development, consider buying me a coffee:</p>
-            <div class="support-buttons">
-                <a href="https://buymeacoff.ee/devidd" target="_blank">
-                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" title="Buy me a coffee">
-                </a>
-                <a href="https://t.me/ddgupdate" target="_blank">
-                    <img src="https://besttelegramgroups.com/wp-content/uploads/2024/01/Best-Telegram-Channels-Link.png" alt="Join my Telegram Channel" title="Join my Telegram Channel">
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Project Repository</h2>
-            <p>Check out the project repository on GitHub:</p>
-            <a href="https://github.com/dddevid/Roblox-Freezing-Fix" target="_blank" class="github-link">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" title="GitHub">
-                Visit our GitHub Page
-            </a>
-        </section>
-    </main>
-
-    <script>
-        document.getElementById('language-button').addEventListener('click', function() {
-            var menu = document.getElementById('language-menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        });
-
-        window.addEventListener('click', function(event) {
-            var menu = document.getElementById('language-menu');
-            if (!menu.contains(event.target) && !document.getElementById('language-button').contains(event.target)) {
-                menu.style.display = 'none';
-            }
-        });
-    </script>
-
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devidd" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <p>Redirecting you to the appropriate language page based on your location...</p>
 </body>
 </html>
