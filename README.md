@@ -1,6 +1,7 @@
 # Roblox Freeze Fix
 
-This tool resolves a common issue causing Roblox to freeze on certain Windows systems by adjusting client settings.
+- This tool resolves a common issue causing Roblox to freeze on certain Windows systems by adjusting client settings.
+- OFFICIAL WEBSITE: https://dddevid.github.io/Roblox-Freezing-Fix/website/
 
 ## Virustotal Check
 
