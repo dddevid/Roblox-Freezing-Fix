@@ -7,45 +7,42 @@
     <meta name="author" content="Your Name">
     <title>Redirecting...</title>
     <script>
-        // Funzione per ottenere la lingua appropriata in base alla posizione
         function redirectToLanguagePage(ipData) {
-            const country = ipData.country_code;
+            const country = ipData.country;
 
-            // Mappa dei paesi alle lingue
             const languageMap = {
-                'IT': 'index_it.html',  // Italia
-                'AL': 'index_al.html',  // Albania
-                'DE': 'index_de.html',  // Germania
-                'ES': 'index_es.html',  // Spagna
-                'SA': 'index_ar.html',  // Arabia Saudita (Arabo)
-                'CN': 'index_zh.html',  // Cina
-                'RU': 'index_ru.html',  // Russia
-                'FR': 'index_fr.html',  // Francia
-                'PL': 'index_pl.html'   // Polonia
+                'IT': 'index_it.html',
+                'AL': 'index_al.html',
+                'DE': 'index_de.html',
+                'ES': 'index_es.html',
+                'SA': 'index_ar.html',
+                'CN': 'index_zh.html',
+                'RU': 'index_ru.html',
+                'FR': 'index_fr.html',
+                'PL': 'index_pl.html'
             };
 
-            // Rileva la lingua in base al codice del paese
-            const languagePage = languageMap[country] || 'index_en.html'; // Imposta a inglese se il paese non è trovato
-
-            // Reindirizza alla pagina nella lingua appropriata
+            const languagePage = languageMap[country] || 'index_en.html';
             window.location.href = languagePage;
         }
 
-        // Funzione per chiamare l'API di geolocalizzazione IP
         function fetchIPData() {
-            const apiURL = 'http://api.ipapi.com/api/check?access_key=free';
+            const apiURL = 'https://ipinfo.io/json';
 
             fetch(apiURL)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
                 .then(data => redirectToLanguagePage(data))
                 .catch(error => {
                     console.error('Errore durante il recupero dei dati IP:', error);
-                    // In caso di errore, reindirizza alla pagina predefinita in inglese
                     window.location.href = 'index_en.html';
                 });
         }
 
-        // Esegui la funzione quando la pagina è caricata
         window.onload = fetchIPData;
     </script>
 </head>
