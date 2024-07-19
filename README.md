@@ -5,7 +5,7 @@ This tool resolves a common issue causing Roblox to freeze on certain Windows sy
 ## Virustotal Check
 
 - `RobloxFreezeFix.exe` virustotal scan: [https://www.virustotal.com/gui/file/f903ef6fc912c4d63b4e11890bad0b8181bdd6990120ebfcce4417ea5c1bf7bd?nocache=1](https://www.virustotal.com/gui/file/55d8cd131dd71558cc4ca5fda75025f430f1f9ec007d7aff2a918c4318d35c81?nocache=1)
-Explanation of the 18 antiviruses: the app is converted to exe with pyinstaller
+Explanation of the 18 antiviruses: the app is converted to exe with pyinstaller, which most viruses use
 
 ## Usage
 
@@ -17,8 +17,6 @@ Explanation of the 18 antiviruses: the app is converted to exe with pyinstaller
 
 3. **Outcome**:
    - The tool will create or modify the `ClientAppSettings.json` file in the Roblox client configuration directory, resolving freezing issues during gameplay.
-
----
 
 ## What to do if it dosen't work
 
