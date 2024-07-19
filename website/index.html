@@ -8,7 +8,11 @@
     <title>Redirecting...</title>
     <script>
         function redirectToLanguagePage(ipData) {
-            const country = ipData.country;
+            console.log('Dati IP ricevuti:', ipData); // Debug: Mostra i dati ricevuti
+
+            const country = ipData.country_code || ipData.country; // Gestisci il campo corretto
+
+            console.log('Codice del paese:', country); // Debug: Mostra il codice del paese
 
             const languageMap = {
                 'IT': 'index_it.html',
@@ -27,7 +31,7 @@
         }
 
         function fetchIPData() {
-            const apiURL = 'https://ipinfo.io/json';
+            const apiURL = 'https://ipinfo.io/json'; // Per ipinfo.io, senza chiave API
 
             fetch(apiURL)
                 .then(response => {
