@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Téléchargez Roblox Freeze Fix pour résoudre les problèmes de gel dans Roblox. Ajustez les paramètres du client pour une expérience de jeu plus fluide.">
-    <meta name="keywords" content="Roblox, Roblox Freeze Fix, résoudre les problèmes Roblox, outils de jeu, téléchargement de correctif Roblox">
+    <meta name="description" content="Téléchargez Roblox Freeze Fix pour résoudre les problèmes de gel sur Roblox. Ajuste les paramètres du client pour un jeu plus fluide.">
+    <meta name="keywords" content="Roblox, Roblox Freeze Fix, dépannage Roblox, outils de jeu, télécharger correctif Roblox">
     <meta name="author" content="Your Name">
-    <title>Roblox Freeze Fix - Résoudre les problèmes de gel dans Roblox</title>
+    <title>Roblox Freeze Fix - Résoudre les problèmes de gel sur Roblox</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://yourwebsite.com/index_fr.html">
     <meta property="og:title" content="Roblox Freeze Fix">
-    <meta property="og:description" content="Téléchargez Roblox Freeze Fix pour résoudre les problèmes de gel dans Roblox. Ajustez les paramètres du client pour une expérience de jeu plus fluide.">
+    <meta property="og:description" content="Téléchargez Roblox Freeze Fix pour résoudre les problèmes de gel sur Roblox. Ajuste les paramètres du client pour un jeu plus fluide.">
     <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
     <meta property="og:url" content="https://yourwebsite.com/index_fr.html">
 </head>
 <body>
     <header>
         <h1>Roblox Freeze Fix</h1>
-        <p>Ce programme résout le problème fréquent de gel de Roblox sur certains systèmes Windows en ajustant les paramètres du client pour offrir une expérience de jeu plus fluide.</p>
+        <p>Cet outil résout un problème courant de gel de Roblox sur certains systèmes Windows en ajustant les paramètres du client pour un jeu plus fluide.</p>
         <div class="language-selector">
             <span>🌍 Language Selector</span>
             <button id="language-button">
@@ -53,4 +53,47 @@
             <ol>
                 <li><strong>Téléchargez le fichier exécutable :</strong> Téléchargez <code>RobloxFreezeFix.exe</code> à partir de <a href="https://github.com/dddevid/Roblox-Freezing-Fix/releases/tag/v1.0.0-Final" target="_blank">cette page de versions</a> du dépôt.</li>
                 <li><strong>Exécutez le fichier exécutable :</strong> Double-cliquez sur <code>RobloxFreezeFix.exe</code> pour l'exécuter.</li>
-                <li><strong>Résultat :</strong> L'outil créera ou
+                <li><strong>Résultat :</strong> L'outil créera ou modifiera le fichier <code>ClientAppSettings.json</code> dans le répertoire de configuration du client Roblox, résolvant ainsi les problèmes de gel pendant le jeu.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Soutien</h2>
+            <p>Si vous trouvez cet outil utile et souhaitez soutenir le développement futur, envisagez de m'acheter un café :</p>
+            <div class="support-buttons">
+                <a href="https://buymeacoff.ee/devidd" target="_blank">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" title="Buy me a coffee">
+                </a>
+                <a href="https://t.me/ddgupdate" target="_blank">
+                    <img src="https://besttelegramgroups.com/wp-content/uploads/2024/01/Best-Telegram-Channels-Link.png" alt="Join my Telegram Channel" title="Join my Telegram Channel">
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Répertoire du projet</h2>
+            <p>Consultez le répertoire du projet sur GitHub :</p>
+            <a href="https://github.com/dddevid/Roblox-Freezing-Fix" target="_blank" class="github-link">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" title="GitHub">
+                Visitez notre page GitHub
+            </a>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('language-button').addEventListener('click', function() {
+            var menu = document.getElementById('language-menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('click', function(event) {
+            var menu = document.getElementById('language-menu');
+            if (!menu.contains(event.target) && !document.getElementById('language-button').contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devidd" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>
