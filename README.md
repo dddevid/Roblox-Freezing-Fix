@@ -5,7 +5,7 @@
 
 ## Virustotal Check
 
-- `RobloxFreezeFix.exe` virustotal scan: [[https://www.virustotal.com/gui/file/f903ef6fc912c4d63b4e11890bad0b8181bdd6990120ebfcce4417ea5c1bf7bd?nocache=1](https://www.virustotal.com/gui/file/b1be894780a43fe5827b007a1cc749f3c86392a3ee4aaf9917b7d6de4e934550/detection)
+- `RobloxFreezeFix.exe` virustotal scan: [https://www.virustotal.com/gui/file/f903ef6fc912c4d63b4e11890bad0b8181bdd6990120ebfcce4417ea5c1bf7bd?nocache=1](https://www.virustotal.com/gui/file/b1be894780a43fe5827b007a1cc749f3c86392a3ee4aaf9917b7d6de4e934550/detection)
 
 ## Usage
 
