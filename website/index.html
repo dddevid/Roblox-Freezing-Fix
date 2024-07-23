@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Redirecting to the appropriate language page based on your location.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="devid">
     <title>Redirecting...</title>
     <script>
         function redirectToLanguagePage(ipData) {
-            console.log('Dati IP ricevuti:', ipData); // Debug: Mostra i dati ricevuti
+            console.log('Dati IP ricevuti:', ipData);
+            const country = ipData.country_code || ipData.country;
+            console.log('Codice del paese:', country);
 
-            const country = ipData.country_code || ipData.country; // Gestisci il campo corretto
+            const spanishSpeakingCountries = [
+                'AR', 'BO', 'CO', 'CR', 'CU', 'CL', 'EC', 'SV', 'GT', 'HN', 'MX', 
+                'NI', 'PA', 'PY', 'PE', 'PR', 'DO', 'UY', 'VE'
+            ];
 
-            console.log('Codice del paese:', country); // Debug: Mostra il codice del paese
+            const arabicSpeakingCountries = [
+                'DZ', 'BH', 'TD', 'KM', 'DJ', 'EG', 'ER', 'IQ', 'IL', 'JO', 'KW', 
+                'LB', 'LY', 'MR', 'MA', 'PS', 'OM', 'QA', 'SA', 'SO', 'SD', 'SY', 
+                'TN', 'AE', 'EH', 'YE'
+            ];
+
+            const russianSpeakingCountries = [
+                'RU', 'BY', 'UA', 'MD', 'KZ', 'MN', 'KG', 'UZ', 'TJ', 'TM', 
+                'GE', 'AZ', 'NO', 'FI', 'AM', 'EE', 'LV', 'LT'
+            ];
+
+            const chineseSpeakingCountries = [
+                'CN', 'HK', 'MO', 'TW', 'SG', 'MY'
+            ];
+
+            const frenchSpeakingCountries = [
+                'BE', 'BJ', 'BF', 'BI', 'CM', 'CA', 'TD', 'CI', 'CD', 'FR', 
+                'DJ', 'GQ', 'HT', 'LU', 'MG', 'MC', 'NE', 'RW', 'SN', 'SC', 
+                'CH', 'TG', 'VU'
+            ];
+
+            const italianSpeakingCountries = [
+                'SM', 'VA', 'MT'
+            ];
 
             const languageMap = {
                 'IT': 'index_it.html',
@@ -20,29 +48,46 @@
                 'DE': 'index_de.html',
                 'ES': 'index_es.html',
                 'SA': 'index_ar.html',
-                'CN': 'index_zh.html',
                 'RU': 'index_ru.html',
+                'CN': 'index_zh.html',
                 'FR': 'index_fr.html',
                 'PL': 'index_pl.html'
             };
 
-            const languagePage = languageMap[country] || 'index_en.html';
-            window.location.href = languagePage;
+            if (spanishSpeakingCountries.includes(country)) {
+                window.location.href = 'index_es.html';
+            } else if (arabicSpeakingCountries.includes(country)) {
+                window.location.href = 'index_ar.html';
+            } else if (russianSpeakingCountries.includes(country)) {
+                window.location.href = 'index_ru.html';
+            } else if (chineseSpeakingCountries.includes(country)) {
+                window.location.href = 'index_zh.html';
+            } else if (frenchSpeakingCountries.includes(country)) {
+                window.location.href = 'index_fr.html';
+            } else if (italianSpeakingCountries.includes(country)) {
+                window.location.href = 'index_it.html';
+            } else {
+                window.location.href = languageMap[country] || 'index_en.html';
+            }
         }
 
         function fetchIPData() {
-            const apiURL = 'https://ipinfo.io/json'; // Per ipinfo.io, senza chiave API
-
-            fetch(apiURL)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
+            fetch('https://api64.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ip = data.ip;
+                    fetch(`https://ipapi.co/${ip}/json/`)
+                        .then(response => response.json())
+                        .then(ipData => {
+                            redirectToLanguagePage(ipData);
+                        })
+                        .catch(error => {
+                            console.error('Errore durante il recupero delle informazioni sull\'IP:', error);
+                            window.location.href = 'index_en.html';
+                        });
                 })
-                .then(data => redirectToLanguagePage(data))
                 .catch(error => {
-                    console.error('Errore durante il recupero dei dati IP:', error);
+                    console.error('Errore durante il recupero dell\'indirizzo IP:', error);
                     window.location.href = 'index_en.html';
                 });
         }
