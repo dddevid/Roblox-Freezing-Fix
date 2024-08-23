@@ -21,9 +21,5 @@
 
 ## Support
 
-If you find this tool helpful and would like to support further development, consider buying me a coffee:
-
-[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoff.ee/devidd)
-
 Your contributions help sustain the development of this and other projects.
 [![Join my telegram Channel](https://besttelegramgroups.com/wp-content/uploads/2024/01/Best-Telegram-Channels-Link.png)](https://t.me/ddgupdate)
